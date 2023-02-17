@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'login.css')}}" />
+    <script type="text/javascript" src="{{ url_for('static', filename = 'hello.js')}}"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello {{name}}!</h1>
+    <form class="formulaire" action="http://localhost:5000/result" method="POST">
+        <p>Les champs obligatoires sont suivis de *.</p>
+        <div class="input">
+            <div>
+                <label>Prénom <span>*</span></label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Nom <span>*</span></label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Courriel <span>*</span></label>
+                <input type="text">
+            </div>
+        </div>
+
+        <h2>Adresse</h2>
+        <div class="input-adress">
+            <div>
+                <label>Adresse <span>*</span></label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Province <span>*</span></label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Téléphone <span>*</span></label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Ville <span>*</span></label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Code postal <span>*</span></label>
+                <input type="text">
+            </div>
+        </div>
+
+        <h2>Consentement </h2>
+        <p>
+            En tant qu'organismes publics universitaires, les bibliothèques universitaires sont assujetties à la Loi sur
+            l’accès aux documents des organismes publics et sur la protection des renseignements personnels (RLRQ c. A2-1, ci-après désignée la « Loi »).
+            Toutes les informations à caractère personnel, qu’elles soient nominatives ou qualitatives, sont protégées par la Loi.  Afin de réaliser leur
+            mission d’enseignement et de recherche, les bibliothèques universitaires québécoises (ci-après, désignées « BUQ ») collectent les renseignements
+            personnels qui sont contenus dans le présent formulaire d’abonnement.
+            Ces données sont conservées sur des plateformes sécurisées jusqu’à trois (3) ans après l’échéance de votre abonnement.
+            Elles sont accessibles aux membres du personnel des BUQ dans le cadre de leurs fonctions. Les employés ayant accès aux données à
+            caractère personnel sont liés par un engagement de confidentialité.  En m’abonnant et en utilisant les services des bibliothèques universitaires,
+            je consens à ce que mes renseignements personnels inscrits dans ce formulaire ainsi que l’historique de mes transactions et certaines notes liées
+            à mon dossier soient collectés, utilisés et conservés.
+        </p>
+        <input type="submit" value="Envoyer >" class="submit" onclick="sayHello()">
+    </form>
+</body>
+</html>

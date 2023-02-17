@@ -1,0 +1,54 @@
+.formulaire {
+    width: 50%;
+    margin: auto;
+    border: 1px solid;
+    padding: 1rem;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 2rem;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+.input input {
+    height: 2.5rem;
+    width: 15rem;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.input-adress {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 2rem;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+.input-adress input {
+    height: 2.5rem;
+    width: 15rem;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.submit {
+    background-color: #34B212;
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2rem, 0, 1rem, 1rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+span{
+    color: red;
+}
