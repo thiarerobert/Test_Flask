@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="{{url_for('static', filename = 'layout.css')}}" />
+<header>
+    <div class="menu">
+            <p> Application flask pour tester Docker</p>
+        <nav>
+            <ul class="liens">
+                <li>
+                    <a href="/">Accueil</a>
+                </li>
+                <li>
+                    <a href="/enregistrer">Enregistrer</a>
+                </li>
+                <li>
+                    <a href="/utilisateurs">Utilisateurs</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+<footer class="footer">
+    <p>&copy; Robert Thiare | Université de Sherbrooke | Février 2023</p>
+</footer>

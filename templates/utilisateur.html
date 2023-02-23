@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'utilisateur.css')}}" />
+    <title>Utilisateur</title>
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <h1>Liste des utilisateurs</h1>
+
+        <nav>
+            <div class="users">
+            {% for user in users%}
+                <div class="user">
+                <ul>
+                    <li>
+                        {{user["nom"]}}
+                    </li>
+                    <li>
+                        {{user["prenom"]}}
+                    </li>
+                    <li>
+                        {{user["courriel"]}}
+                    </li>
+                    <li>
+                        {{user["adresse"]}}
+                    </li>
+                    <li>
+                        {{user["province"]}}
+                    </li>
+                    <li>
+                        {{user["telephone"]}}
+                    </li>
+                    <li>
+                        {{user["codePostal"]}}
+                    </li>
+                    <li>
+                        {{user["ville"]}}
+                    </li>
+                </ul>
+            </div>
+            {% endfor %}
+            </nav>
+        </div>
+    {% endblock %}
+
+</body>
+</html>

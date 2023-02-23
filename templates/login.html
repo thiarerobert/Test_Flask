@@ -9,6 +9,8 @@
     <title>Document</title>
 </head>
 <body>
+    {% extends "layout.html" %}
+    {% block content %}
     <h1>Hello {{name}}!</h1>
     <form class="formulaire" action = "{{ url_for('enregistrer')}}" method="POST">
         <p>Les champs obligatoires sont suivis de *.</p>
@@ -66,5 +68,6 @@
         </p>
         <input type="submit" value="Envoyer >" class="submit" onclick="sayHello()">
     </form>
+    {% endblock %}
 </body>
 </html>
