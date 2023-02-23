@@ -1,12 +1,8 @@
+<!doctype html>
+<html>
+    <body>
+        resultat du requête:{{ msg }}
+        <h2><a href="\"> retourner à la page d'accueil</a></h2>
+    </body>
+</html>
 
-
-{% block content %}
-    <h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
-    {% for post in posts %}
-        <a href="#">
-            <h2>{{ post['title'] }}</h2>
-        </a>
-        <span class="badge badge-primary">{{ post['created'] }}</span>
-        <hr>
-    {% endfor %}
-{% endblock %}
