@@ -21,10 +21,15 @@ body {
     height: 6rem;
 }
 
-.menu p {
+.menu-left{
+    display: flex;
+    gap: 2rem;
+}
+.menu-left p {
     font-size: 20px;
     font-weight: bold;
 }
+
 
 .liens{
     list-style-type: none;
